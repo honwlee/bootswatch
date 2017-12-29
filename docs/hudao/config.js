@@ -1,8 +1,8 @@
 requirejs.config({
     paths: {
         "skylark-utils": "http://registry.skylarkjs.org/packages/skylark-utils/v0.9.5-beta/uncompressed/skylark-utils-all",
-        "skylark-bs-swt": "../_vendor/skylark-bs-swt",
-        "skylark-jquery": "../_vendor/skylark-jquery",
+        "skylark-bs-swt": "http://registry.skylarkjs.org/packages/skylark-bs-swt/v0.9.0-beta/js/uncompressed/skylark-bs-swt",
+        "skylark-jquery": "http://registry.skylarkjs.org/packages/skylark-jquery/v0.9.6-beta/uncompressed/skylark-jquery",
         "custom": "../_assets/js/custom",
         "popper": "../_vendor/popper.js/dist/umd/popper.min"
     },
@@ -12,13 +12,16 @@ requirejs.config({
         "skylark-bs-swt": {
             "deps": ["skylark-utils"]
         },
+        "skylark-jquery": {
+            "deps": ["skylark-utils"]
+        },
         "custom": ["skylark-jquery"],
         "popper": ["skylark-jquery"]
     }
 });
 require([
-    "skylark-bs-swt",
     "skylark-utils",
+    "skylark-bs-swt"
 ], function() {
     require([
         "skylark-jquery"
