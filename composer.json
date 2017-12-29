@@ -2,12 +2,10 @@
     "name": "thomaspark/bootswatch",
     "description": "Themes for Bootstrap",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "thomaspark",
-            "email": "thomas@bootswatch.com"
-        }
-    ],
+    "authors": [{
+        "name": "thomaspark",
+        "email": "thomas@bootswatch.com"
+    }],
     "type": "component",
     "suggest": {
         "robloach/component-installer": "Allows installation of Components via Composer"
@@ -30,6 +28,7 @@
                 "paper/*",
                 "readable/*",
                 "sandstone/*",
+                "hudao/*",
                 "simplex/*",
                 "slate/*",
                 "spacelab/*",
