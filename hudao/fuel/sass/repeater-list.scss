@@ -123,7 +123,7 @@ $mutli-select-enabled-width: 37px;
                         color: fade($true-black, 0); // transparent
                         line-height: 1.42857;
                         padding: 8px;
-                        #fuelux>@include no-selection-allowed();
+                        @include fuelux-no-selection-allowed();
                         &:first-child {
                             border-left: none;
                             .header-checkbox {
@@ -139,8 +139,7 @@ $mutli-select-enabled-width: 37px;
                             &.sorted {
                                 background: $selectable-hover;
                                 cursor: pointer;
-                                #fuelux>@mixin vertical($start-color: $gray98;
-                                $end-color: $gray90);
+                                @include fuelux-vertical($start-color: $gray98, $end-color: $gray90);
                             }
                         }
                         &.sorted {
@@ -184,7 +183,7 @@ $mutli-select-enabled-width: 37px;
                     position: absolute;
                     top: 0;
                     z-index: 1;
-                    #fuelux>@include no-selection-allowed();
+                    @include fuelux-no-selection-allowed();
                     &.shifted {
                         margin-left: -1px;
                         //Webkit override
@@ -197,8 +196,7 @@ $mutli-select-enabled-width: 37px;
                         &.sorted {
                             background: $gray96;
                             cursor: pointer;
-                            #fuelux>@mixin vertical($start-color: $gray98;
-                            $end-color: $gray90);
+                            @include fuelux-vertical($start-color: $gray98, $end-color: $gray90);
                         }
                         &.sorted {
                             span.glyphicon {

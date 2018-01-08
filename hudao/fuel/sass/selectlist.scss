@@ -17,9 +17,9 @@ $selectlist-caret-width: 4px;
         }
         .btn.dropdown-toggle {
             text-align: left;
-            padding-right: unit((2 * $selectlist-horizontal-padding + $selectlist-caret-width), px);
+            padding-right: unit((2 * $selectlist-horizontal-padding + $selectlist-caret-width));
             .caret {
-                #fuelux>@include vertical-align();
+                @include fuelux-vertical-align();
                 right: $selectlist-horizontal-padding;
             }
         }

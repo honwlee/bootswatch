@@ -1,0 +1,303 @@
+$bootstrap-sass-asset-helper: false !default;
+//
+// Variables
+// --------------------------------------------------
+// Global values
+// --------------------------------------------------
+$true-black : #000 !default;
+$true-white : #FFF !default;
+// Grays
+// -------------------------
+$gray07 : lighten($true-black, 7%) !default; // #111
+$gray13 : lighten($true-black, 13.5%) !default; // #222
+$gray15 : lighten($true-black, 15%) !default; // #252525
+$gray20 : lighten($true-black, 20%) !default; // #333
+$gray27 : lighten($true-black, 27%) !default; // #444
+$gray33 : lighten($true-black, 33.5%) !default; // #555
+$gray40 : lighten($true-black, 40%) !default; // #666
+$gray46 : lighten($true-black, 46%) !default; // #757575
+//$gray47:            lighten($true-black, 46.7%); // #777
+$gray53 : lighten($true-black, 53%) !default; // #888
+$gray60 : lighten($true-black, 60%) !default; // #999
+$gray67 : lighten($true-black, 66.5%) !default; // #AAA
+$gray74 : lighten($true-black, 73.5%) !default; // #BBB
+//$gray75:            lighten($true-black, 75%);   // #4b4b4b
+$gray80 : lighten($true-black, 80%) !default; // #CCC
+$gray87 : lighten($true-black, 86.5%) !default; // #DDD
+$gray90 : lighten($true-black, 90%) !default; // #E5E5E5
+$gray93 : lighten($true-black, 93.5%) !default; // #EEE
+$gray96 : lighten($true-black, 96%) !default; // #F5F5F5
+$gray98 : lighten($true-black, 98%) !default; // #f9f9f9
+$gray99 : lighten($true-black, 99%) !default; // #FCFCFC
+$black : $true-black !default;
+$gray-darker : $gray13 !default;
+$gray-dark : $gray20 !default;
+$gray : $gray33 !default;
+$gray-light : $gray60 !default;
+$gray-lighter : $gray93 !default;
+$white : $true-white !default;
+// Accent colors
+// -------------------------
+$blue : #049cdb !default;
+$blue-dark : #0064cd !default;
+$green : #46a546 !default;
+$red : #9d261d !default;
+$yellow : #ffc40d !default;
+$orange : #f89406 !default;
+$pink : #c3325f !default;
+$purple : #7a43b6 !default;
+// Text Colors
+// -------------------------
+$text-primary : #428bca !default;
+$text-success : #3c763d !default;
+$text-info : #31708f !default;
+$text-warning : #8a6d3b !default;
+$text-danger : #a94442 !default;
+$text-dimmed : $gray40 !default;
+$text-muted : $gray60 !default;
+// Scaffolding
+// -------------------------
+$body-background : $white !default;
+$text-color : $gray-dark !default;
+$focus-color : #5B9DD9 !default;
+// Links
+// -------------------------
+$link-color : #0088cc !default;
+$link-color-hover : darken($link-color, 15%) !default;
+// Typography
+// -------------------------
+$sans-font-family : "Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif !default;
+$serif-font-family : Georgia,
+"Times New Roman",
+Times,
+serif !default;
+$mono-font-family : Monaco,
+Menlo,
+Consolas,
+"Courier New",
+monospace !default;
+$base-font-size : 14px !default;
+$base-font-family : $sans-font-family !default;
+$base-line-height : 20px !default;
+$alt-font-family : $serif-font-family !default;
+$headings-font-family : inherit !default; // empty to use BS default, $base-font-family
+$headings-font-weight : bold !default; // instead of browser default, bold
+$headings-color : inherit !default; // empty to use BS default, $text-color
+// Component sizing
+// -------------------------
+// Based on 14px font-size and 20px line-height
+$font-size-large : $base-font-size * 1.25 !default; // ~18px
+$font-size-small : $base-font-size * 0.85 !default; // ~12px
+$font-size-mini : $base-font-size * 0.75 !default; // ~11px
+$font-size-h1 : floor(($base-font-size * 2.6)) !default; // ~36px
+$font-size-h2 : floor(($base-font-size * 2.15)) !default; // ~30px
+$font-size-h3 : ceil(($base-font-size * 1.7)) !default; // ~24px
+$font-size-h4 : ceil(($base-font-size * 1.25)) !default; // ~18px
+$font-size-h5 : $base-font-size !default;
+$font-size-h6 : ceil(($base-font-size * 0.85)) !default; // ~12pxgr
+$padding-large : 11px 19px !default; // 44px
+$padding-small : 2px 10px !default; // 26px
+$padding-mini : 0 6px !default; // 22px
+$base-border-radius : 4px !default;
+$border-radius-large : 6px !default;
+$border-radius-small : 3px !default;
+// Tables
+// -------------------------
+$table-background : transparent !default; // overall background-color
+$table-background-accent : $gray98 !default; // for striping
+$table-background-hover : $gray96 !default; // for hover
+$table-border : $gray87 !default; // table and cell border
+// Buttons
+// -------------------------
+$btn-background : $white !default;
+$btn-background-highlight : darken($white, 10%) !default;
+$btn-border : $gray80 !default;
+$btn-primary-background : $link-color !default;
+$btn-primary-background-highlight : adjust-hue($btn-primary-background, 20%) !default;
+$btn-info-background : #5bc0de !default;
+$btn-info-background-highlight : #2f96b4 !default;
+$btn-success-background : #62c462 !default;
+$btn-success-background-highlight : #51a351 !default;
+$btn-warning-background : lighten($orange, 15%) !default;
+$btn-warning-background-highlight : $orange !default;
+$btn-danger-background : #ee5f5b !default;
+$btn-danger-background-highlight : #bd362f !default;
+$btn-inverse-background : $gray27 !default;
+$btn-inverse-background-highlight : $gray-darker !default;
+$btn-padding-vertical : 6px !default;
+$btn-padding-horizontal : 12px !default;
+// Forms
+// -------------------------
+$input-background : $white !default;
+$input-border : $gray80 !default;
+$input-border-radius : $base-border-radius !default;
+$input-disabled-background : $gray93 !default;
+$form-actions-background : $gray96 !default;
+$input-height : $base-line-height+10px !default; // base line-height + 8px vertical padding + 2px top/bottom border
+// Dropdowns
+// -------------------------
+$dropdown-background : $white !default;
+$dropdown-border : rgba(0, 0, 0, .2) !default;
+$dropdown-divider-top : $gray90 !default;
+$dropdown-divider-bottom : $white !default;
+$dropdown-link-color : $gray-dark !default;
+$dropdown-link-color-hover : $white !default;
+$dropdown-link-color-active : $white !default;
+$dropdown-link-background-active : $link-color !default;
+$dropdown-link-background-hover : $dropdown-link-background-active !default;
+// COMPONENT VARIABLES
+// --------------------------------------------------
+// Z-index master list
+// -------------------------
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these :)
+$zindex-dropdown : 1000 !default;
+$zindex-popover : 1010 !default;
+$zindex-tooltip : 1030 !default;
+$zindex-fixed-navbar : 1030 !default;
+$zindex-modal-backdrop : 1040 !default;
+$zindex-modal : 1050 !default;
+//Selectable Hover, Selected, Selected Hover
+// -------------------------
+$selectable-hover: $gray96 !default;
+$selected: $gray93 !default;
+$selected-hover: $gray87 !default;
+// Sprite icons path
+// -------------------------
+$icon-sprite-path : "../img/glyphicons-halflings.png" !default;
+$icon-white-sprite-path : "../img/glyphicons-halflings-white.png" !default;
+// Input placeholder text color
+// -------------------------
+$placeholder-text : $gray60 !default;
+// Hr border color
+// -------------------------
+$hr-border : $gray93 !default;
+// Horizontal forms & lists
+// -------------------------
+$horizontal-component-offset : 180px !default;
+// Wells
+// -------------------------
+$well-background : $gray96 !default;
+// Navbar
+// -------------------------
+$navbar-collapse-width : 979px !default;
+$navbar-collapse-desktop-width : $navbar-collapse-width+1 !default;
+$navbar-height : 40px !default;
+$navbar-background-highlight : $true-white !default;
+$navbar-background : darken($navbar-background-highlight, 5%) !default;
+$navbar-border : darken($navbar-background, 12%) !default;
+$navbar-text : $gray40 !default;
+$navbar-link-color : $gray40 !default;
+$navbar-link-color-hover : $gray-dark !default;
+$navbar-link-color-active : $gray !default;
+$navbar-link-background-hover : transparent !default;
+$navbar-link-background-active : darken($navbar-background, 5%) !default;
+$navbar-brand-color : $navbar-link-color !default;
+// Inverted navbar
+$navbar-inverse-background : $gray07 !default;
+$navbar-inverse-background-highlight : $gray13 !default;
+$navbar-inverse-border : $gray15 !default;
+$navbar-inverse-text : $gray60 !default;
+$navbar-inverse-link-color : $gray60 !default;
+$navbar-inverse-link-color-hover : $white !default;
+$navbar-inverse-link-color-active : $navbar-inverse-link-color-hover !default;
+$navbar-inverse-link-background-hover : transparent !default;
+$navbar-inverse-link-background-active : $navbar-inverse-background !default;
+$navbar-inverse-search-background : lighten($navbar-inverse-background, 25%) !default;
+$navbar-inverse-search-background-focus : $white !default;
+$navbar-inverse-search-border : $navbar-inverse-background !default;
+$navbar-inverse-search-placeholder-color : $gray80 !default;
+$navbar-inverse-brand-color : $navbar-inverse-link-color !default;
+// Pagination
+// -------------------------
+$pagination-background : $true-white !default;
+$pagination-border : $gray87 !default;
+$pagination-active-background : $gray96 !default;
+// Hero unit
+// -------------------------
+$hero-unit-background : $gray93 !default;
+$hero-unit-heading-color : inherit !default;
+$hero-unit-lead-color : inherit !default;
+// Form states and alerts
+// -------------------------
+$warning-text : #c09853 !default;
+$warning-background : #fcf8e3 !default;
+$warning-border : darken(adjust-hue($warning-background, -10), 3%) !default;
+$error-text : #b94a48 !default;
+$error-background : #f2dede !default;
+$error-border : darken(adjust-hue($error-background, -10), 3%) !default;
+$success-text : #468847 !default;
+$success-background : #dff0d8 !default;
+$success-border : darken(adjust-hue($success-background, -10), 5%) !default;
+$info-text : #3a87ad !default;
+$info-background : #d9edf7 !default;
+$info-border : darken(adjust-hue($info-background, -10), 7%) !default;
+// Tooltips and popovers
+// -------------------------
+$tooltip-color : $true-white !default;
+$tooltip-background : $true-black !default;
+$tooltip-arrow-width : 5px !default;
+$tooltip-arrow-color : $tooltip-background !default;
+$popover-background : $true-white !default;
+$popover-arrow-width : 10px !default;
+$popover-arrow-color : $true-white !default;
+$popover-title-background : darken($popover-background, 3%) !default;
+// Special enhancement for popovers
+$popover-arrow-outer-width : $popover-arrow-width+1 !default;
+$popover-arrow-outer-color : rgba(0, 0, 0, .25) !default;
+// GRID
+// --------------------------------------------------
+// Default 940px grid
+// -------------------------
+$grid-columns : 12 !default;
+$grid-column-width : 60px !default;
+$grid-gutter-width : 20px !default;
+$grid-row-width : ($grid-columns * $grid-column-width)+($grid-gutter-width * ($grid-columns - 1)) !default;
+// 1200px min
+$grid-column-width1200 : 70px !default;
+$grid-gutter-width1200 : 30px !default;
+$grid-row-width1200 : ($grid-columns * $grid-column-width1200)+($grid-gutter-width1200 * ($grid-columns - 1)) !default;
+// 768px-979px
+$grid-column-width768 : 42px !default;
+$grid-gutter-width768 : 20px !default;
+$grid-row-width768 : ($grid-columns * $grid-column-width768)+($grid-gutter-width768 * ($grid-columns - 1)) !default;
+// Fluid grid
+// -------------------------
+$fluid-grid-column-width : (percentage($grid-column-width/$grid-row-width)) !default;
+$fluid-grid-gutter-width : (percentage($grid-gutter-width/$grid-row-width)) !default;
+// 1200px min
+$fluid-grid-column-width1200 : (percentage($grid-column-width1200/$grid-row-width1200)) !default;
+$fluid-grid-gutter-width1200 : (percentage($grid-gutter-width1200/$grid-row-width1200)) !default;
+// 768px-979px
+$fluid-grid-column-width768 : (percentage($grid-column-width768/$grid-row-width768)) !default;
+$fluid-grid-gutter-width768 : (percentage($grid-gutter-width768/$grid-row-width768)) !default;
+// Controls
+// --------------------------------------------------
+// Checkbox
+// -------------------------
+$checkbox-primary-color : #39b3d7 !default;
+// Datepicker
+// -------------------------
+$datepicker-hover : #0f5f9f !default;
+$datepicker-hover-alt : #1b75bb !default;
+// Tree
+// -------------------------
+$tree-hover-text: $gray60 !default;
+$tree-select-background: $selected !default;
+// Icons
+// -------------------------
+$fuelux-font-path: "../fonts/" !default;
+// --------------------------------------------------
+// Padding / Margin
+// --------------------------------------------------
+$padding-xs: 5px !default;
+$padding-sm: 10px !default;
+$padding-md: 15px !default;
+$padding-lg: 20px !default;
+$margin-xs: 5px !default;
+$margin-sm: 10px !default;
+$margin-md: 15px !default;
+$margin-lg: 20px !default;

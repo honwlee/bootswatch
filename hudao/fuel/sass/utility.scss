@@ -1,4 +1,3 @@
-@import "fuelux-core";
 .fuelux {
     // Font Family
     // -------------------------
@@ -193,16 +192,16 @@
     // Helpers
     // -------------------------
     .data-label {
-        #fuelux>@include data-label();
+        @include fuelux-data-label();
     }
     .data-value {
-        #fuelux>@include data-value();
+        @include fuelux-data-value();
     }
     .section-heading {
-        #fuelux>@include section-heading();
+        @include fuelux-section-heading();
     }
     // Truncate
     .truncate {
-        #fuelux>@extend truncate;
+        @include fuelux-truncate();
     }
 }

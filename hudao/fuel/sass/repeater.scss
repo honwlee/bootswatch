@@ -18,7 +18,7 @@
             background: $gray98;
             min-height: 50px;
             padding: 8px;
-            @extend clearfix;
+            @extend .clearfix;
             &-left {
                 float: left;
             }
@@ -29,7 +29,6 @@
                 &-left,
                 &-right {
                     float: none;
-                    @extend clearfix;
                 }
                 &-left {
                     margin-bottom: 8px;
@@ -38,11 +37,11 @@
         }
         &-header {
             border-bottom: 1px solid $gray87;
-            #fuelux>@include border-top-radius(4px);
+            @include fuelux-border-top-radius(4px);
         }
         &-footer {
             border-top: 1px solid $gray87;
-            #fuelux>@include border-bottom-radius(4px);
+            @include fuelux-border-bottom-radius(4px);
         }
         &-loader {
             display: none;

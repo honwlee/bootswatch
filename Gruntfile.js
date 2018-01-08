@@ -1,3 +1,4 @@
+const path = require("path");
 module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-less');
@@ -231,8 +232,9 @@ module.exports = function(grunt) {
      * Regex borrowed form
      * https://gist.github.com/rosskevin/ddfe895091de2ca5f931
      * */
-    grunt.registerTask('convert_less', 'Convert less to scss using regular expression', function() {
-        var convertBaseDir = '';
+    grunt.registerTask('convert_less', 'Convert less to scss using regular expression', function(dir) {
+        var convertBaseDir = dir || '';
+        console.log(convertBaseDir);
         grunt.file.expand(convertBaseDir + '*/*.less').forEach(function(lessFile) {
             if (lessFile !== "global/build.less") {
                 var srcContents = grunt.file.read(lessFile);
@@ -275,9 +277,12 @@ module.exports = function(grunt) {
                 }
 
                 var baseDirRegex = new RegExp("^" + convertBaseDir, "g");
-                var sassFile = lessFile.replace(baseDirRegex, '').replace(/\.less$/, '.scss').replace(/(bootswatch|variables)/, '_$1');
+                console.log(lessFile);
+                // var sassFile = lessFile.replace(baseDirRegex, '').replace(/\.less$/, '.scss').replace(/(bootswatch|variables)/, '_$1');
+                var sassFile = lessFile.replace(/(.*)\/(.*)\.less$/, '$1/sass/$2.scss');
+                console.log(sassFile);
                 grunt.file.write(sassFile, out);
-                grunt.log.writeln('Converted less file:  ', lessFile, Array(27 - lessFile.length).join(' '), '> ', sassFile);
+                // grunt.log.writeln('Converted less file:  ', lessFile, Array(27 - lessFile.length).join(' '), '> ', sassFile);
             }
         });
     });
