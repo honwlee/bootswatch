@@ -17184,6 +17184,118 @@ hr.on-light {
   margin-top: 0;
 }
 
+.checkbox-custom .is-empty,
+.pillbox-input-wrap .is-empty,
+.placard .is-empty,
+.radio-custom .is-empty,
+.combobox .is-empty,
+#datepicker .is-empty,
+#myDatepickerContainer .is-empty {
+  margin-top: 0;
+}
+
+.fu-example .form-group {
+  margin-top: 0;
+}
+.fu-example .highlight {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.fu-example .highlight.checked {
+  background-color: #e1e1e8 !important;
+  color: inherit !important;
+}
+.fu-example .bg-success {
+  background-color: #dff0d8 !important;
+  color: inherit !important;
+}
+.fu-example .bg-info {
+  color: inherit !important;
+  background-color: #d9edf7 !important;
+}
+.fu-example .radio-custom .radio-label {
+  position: inherit;
+  left: 0;
+}
+.fu-example .input-group-addon.radio-custom.radio-inline span {
+  top: 12px;
+}
+
+.pillbox-input-wrap {
+  margin: 0;
+}
+.pillbox-input-wrap .form-group {
+  margin-top: 0;
+  padding-bottom: 0;
+}
+.pillbox-input-wrap .pillbox-add-item {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.scheduler .form-group,
+.search .form-group,
+#spinbox .form-group {
+  margin-top: 0;
+}
+
+.fuelux .scheduler .start-datetime .combobox {
+  max-width: inherit;
+}
+
+.scheduler .selectlist {
+  margin: 0;
+}
+
+.checkbox .highlight {
+  margin-bottom: 0;
+}
+
+.fuelux .checkbox-custom.highlight {
+  padding-left: 10px;
+}
+
+.fuelux .checkbox-custom.highlight.checked {
+  background: #e6e6e6;
+  border-radius: 4px;
+}
+
+.wizard .alert {
+  color: inherit;
+}
+.wizard .btn {
+  padding: 6px 12px;
+  margin: 0;
+}
+
+.repeater .form-group {
+  padding-bottom: 0;
+}
+.repeater .form-control {
+  margin-bottom: 0;
+}
+.repeater .input-group-btn .btn {
+  padding: 5px 20px;
+}
+.repeater .repeater-header-right .btn-group {
+  margin: 0;
+}
+.repeater .repeater-header-right .btn-group .btn {
+  padding: 6px 12px;
+}
+
+.repeater-footer .form-group {
+  margin-top: 0;
+  padding-bottom: 0;
+}
+.repeater-footer .form-group .form-control {
+  padding-bottom: 0;
+}
+.repeater-footer .is-empty {
+  display: none;
+}
+
 .nav-tabs .nav-item + .nav-item {
   margin-left: 0;
 }
@@ -17278,4 +17390,12 @@ hr.on-light {
 .navbar.bg-dark input[type=password]::placeholder, .navbar.bg-primary input[type=text]::placeholder,
 .navbar.bg-primary input[type=password]::placeholder {
   color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar .navbar-form {
+  margin: 0;
+}
+
+.page-header .list-group-item {
+  padding: 10px 15px;
 }
